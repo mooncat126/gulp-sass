@@ -1,0 +1,44 @@
+{
+  "name": "nokigu-replace",
+  "version": "1.0.0",
+  "description": "This is the Git repo of the Docker image for MODX EVOLUTION JP(1系).",
+  "main": "index.js",
+  "scripts": {
+    "lint:css": "stylelint 'src/stylesheets/**/*.{css,scss}'",
+    "fix:css": "npm run lint:css -- --fix",
+    "lint:eslint": "eslint 'src/js/*.js' --quiet",
+    "fix:eslint": "npm run lint:eslint -- --fix",
+    "lint:html": "htmlhint 'src/*.html'",
+    "babel": "./node_modules/.bin/babel src/js/main.js --out-dir src/js/dist/"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "autoprefixer": "^10.3.1",
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "fibers": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "htmlhint": "^0.15.1",
+    "postcss": "^8.3.5",
+    "prettier": "^2.3.2",
+    "sass": "^1.32.13",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-prettier": "^1.2.0"
+  },
+  "resolutions": {
+    "sass": "1.32.13"
+  }
+}
